@@ -1,6 +1,6 @@
-# LAB - Class 31
+# LAB - Class 33
 
-## Project: Django REST Framework & Docker
+## Project: Authentication & Production Server
 
 ## Author: Emam Al Mounqer
 
@@ -8,10 +8,16 @@
 
 you need to have docker installed on your machine
 
+```bash
+docker compose up
+```
+
 ## How to initialize/run your application
 
 ```bash
-docker compose up
+docker compose run web python manage.py migrate
+
+docker compose run web python manage.py createsuperuser
 ```
 
 ## Tests
